@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #c1c6ef;
+    padding: 20px;
+}
+
+.simple-header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 80px;
+    cursor: pointer;
+}
+
+.demo-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.welcome-section {
+    padding: 20px 0;
+}
+
+.welcome {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.add-quest, .daily-quests, .inventory, .achievements, .shop {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-quest h2 {
+    color: #444;
+}
+
+.subscript {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.quest-input {
+    margin-top: 10px;
+}
+
+.quest-textbox {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.quest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quest-btn {
+    background-color: #00b7ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quest-btn:hover {
+    background-color: #008ac1;
+    transition: 0.4s;
+}
+
+.quest-btn:active {
+    background-color: #6cc6e9;
+}
+
+.shop-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shop-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.redeem-btn {
+    background-color: #00b7ff;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.redeem-btn:hover {
+    background-color: #008ac1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .quest-list {
+        flex-direction: column;
+    }
+
+    .shop-items {
+        flex-direction: column;
+    }
+}
