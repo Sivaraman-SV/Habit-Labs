@@ -197,3 +197,68 @@
 #reward{
     margin-left: 25rem;
 }
+/* Tablets (width 768px and smaller) */
+@media (max-width: 768px) {
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item img {
+        margin-left: 0; /* Center images for smaller screens */
+        margin-top: 10px;
+        width: 200px; /* Scale down images */
+    }
+
+    .describing {
+        margin-left: 0; /* Align descriptions properly */
+        text-align: center;
+    }
+
+    .AboutDesc {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    .AboutDesc h1 {
+        font-size: 3rem;
+    }
+
+    .animate-character {
+        font-size: 3rem; /* Scale down animated text */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Mobile devices (width 480px and smaller) */
+@media (max-width: 480px) {
+    .feature-item img {
+        width: 150px; /* Scale down images further */
+    }
+
+    .describing {
+        font-size: 1rem;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .AboutDesc {
+        font-size: 1rem;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .AboutDesc h1 {
+        font-size: 2.5rem;
+    }
+
+    .header a {
+        font-size: 14px; /* Adjust header link font sizes */
+        padding: 5px;
+    }
+
+    .animate-character {
+        font-size: 2.5rem; /* Adjust animated text */
+    }
+}
